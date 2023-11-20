@@ -14,12 +14,12 @@ do
     endline=$((startline + number - 1))
     sed -n "${startline},${endline-1}p" $xyzfilename > temp.txt
 
-    new_startline=$(grep -n '\[geometry\]' $2 | awk -F : '{print $1}')
+    new_startline=$(grep -n -i '\[geometry\]' $inp | awk -F : '{print $1}')
 
 
 
-    sed "${new_startline}r temp.txt" $2 > $i.inp
-    sed -i "/\[geometry\]/d" $i.inp
+    sed "${new_startline}r temp.txt" $inp > $i.inp
+    sed -i "/\[geometry\]/I d" $i.inp
 done
 
 rm temp.txt

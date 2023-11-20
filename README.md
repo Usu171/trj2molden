@@ -1,6 +1,8 @@
-# Calculate the SP for each frame of the xyz animation
+# Calculate the molden file for each frame of the xyz animation
 
 **trj2inp.sh**: Generate ORCA input files for each frame of the xyz animation
+
+(You can also use input files from other software, but you need to create the corresponding `runall.sh`)
 
 How to Use: `./trj2inp.sh trj.xyz template.inp`
 
@@ -16,7 +18,7 @@ e.g.
 *
 ```
 
-**orcarunall.sh**: Run all ORCA input files.
+**orcarunall.sh**: Run all ORCA input files
 
 
 **trj2xyz.sh**: Split the xyz animation into individual .xyz files
@@ -28,5 +30,7 @@ How to Use: `./trj2xyz.sh trj.xyz`
 **batch.sh & bath.bat**: Use Multiwfn to generate cub files for IRI
 
 **isoall.tcl**: Render IRI animation using VMD
+
+**reverse.sh**: Reverse your xyz animation file
 
 `source isoall.tcl`
