@@ -1,4 +1,4 @@
-# Calculate the molden file for each frame of the xyz animation
+# Calculate the molden.input file for each frame of the xyz animation
 
 **trj2inp.sh**: Generate ORCA input files for each frame of the xyz animation
 
@@ -19,6 +19,7 @@ e.g.
 ```
 
 **orcarunall.sh**: Run all ORCA input files
+
 
 
 **trj2xyz.sh**: Split the xyz animation into individual .xyz files
